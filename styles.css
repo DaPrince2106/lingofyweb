@@ -209,6 +209,7 @@ a {
     font-weight: 800;
     margin-bottom: 24px;
     background: linear-gradient(180deg, #3CDFFF 0%, #FFFFFF 180%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fadeUp 0.8s ease-out 0.1s backwards;
@@ -523,5 +524,19 @@ a {
     
     .nav-links {
         display: none; /* Simplify for mobile for now */
+    }
+
+    .timeline-visual,
+    .audio-visual {
+        width: 100%;
+    }
+
+    .timeline-visual video,
+    .audio-visual video {
+        width: min(280px, 82vw);
+        height: auto;
+        max-height: 520px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
